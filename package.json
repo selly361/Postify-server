@@ -13,7 +13,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node server",
+    "start": "node index.js",
     "dev": "nodemon index.js"
   },
   "keywords": [],
