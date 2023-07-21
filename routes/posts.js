@@ -1,4 +1,4 @@
-import * as controllers from "../controllers/postsController"
+import * as controllers from "../controllers/postsController.js"
 
 import express from "express"
 
