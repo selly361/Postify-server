@@ -12,12 +12,7 @@ app.use(express.urlencoded({ extended: true }))
 
 app.use(
   cors({
-     origin:
-        process.env.NODE_ENV === 'development'
-           ? true
-           : process.env.NODE_ENV === 'production'
-           ? process.env.ORIGIN
-           : false
+     origin: process.env.ORIGIN
   })
 )
 
