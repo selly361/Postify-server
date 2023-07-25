@@ -5,17 +5,16 @@ const postSchema = Schema({
     message: String,
     creator: String,
     tags: [String],
-    selectedFile: String,
+    selectedFile: {
+        type: String,
+        default: "https://tinyurl.com/2p9ehrer"
+    },
     likes: {
         type: Number,
         default: 0
-    },
-    createdAt: {
-        type: Date,
-        default: new Date()
     }
     
-})
+}, { timestamps: true })
 
 
 const postMessage = model("PostMessage", postSchema)
